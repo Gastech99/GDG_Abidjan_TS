@@ -6,3 +6,4 @@ var firsName = "Djimo";
 var nullablee = null;
 var undec = undefined;
 var isClosed = true;
+
