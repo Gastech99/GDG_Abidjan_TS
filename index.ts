@@ -11,6 +11,7 @@ const isClosed: boolean = true;
 // Les types non primitives en TypeScript
 const users: string[] = ["Toto"];
 const users2: Array<string> = ["Tata"];
+
 const contact: {
   id: number;
   nom: string;
@@ -18,6 +19,23 @@ const contact: {
   age: number;
   phone: string;
 } = {
+  id: 1,
+  nom: "Gassama",
+  prenom: "Djimo",
+  age: 25,
+  phone: "+221779818854",
+};
+
+// Utilisation de l'interface en TypeScript
+interface User {
+  id: number;
+  nom: string;
+  prenom: string;
+  age: number;
+  phone: string;
+}
+
+const agent: User = {
   id: 1,
   nom: "Gassama",
   prenom: "Djimo",
