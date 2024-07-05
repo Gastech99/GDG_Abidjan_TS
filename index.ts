@@ -42,3 +42,31 @@ const agent: User = {
   age: 25,
   phone: "+221779818854",
 };
+
+// Les fonctions en TypeScript
+function somme(a: number, b: number): number {
+  return a + b;
+}
+
+somme(10, 5);
+
+class Student {
+  private Name: string;
+  private LastName: string;
+
+  constructor(Name: string, LastName: string) {
+    this.Name = Name;
+    this.LastName = LastName;
+  }
+
+  getName(): string {
+    return this.Name;
+  }
+
+  setName(Name: string): void {
+    this.Name = Name;
+  }
+}
+
+const student_1 = new Student("PAPA", "SANTO");
+console.log(student_1);
